@@ -11,7 +11,7 @@ const productos = [
     {
         id: "avacyn",
         nombre: "Avacyn, Angel of Hope",
-        descripcion: "Carta del Set Double Masters Box Toppers",
+        descripcion: "Carta del Set Scarlet & Violet",
         stock: 1,
         precio: 88,
         imagen: "../img/magic1.jpg",
@@ -25,14 +25,55 @@ const productos = [
         imagen: "../img/yugioh1.png",
         categoria:"yugioh",
     },{
-        id: "ltg",
-        nombre: "Dark Magician Girl",
+        id: "liliana",
+        nombre: "Liliana Vess",
         descripcion: "Carta de la Primera Edicion",
         stock: 2,
         precio: 180,
-        imagen: "https://imgb.ifunny.co/images/039fa2a00be3724def2c54169bcb8c02e128e8df0d022c44d78b8e6b75179c42_1.jpg",
+        imagen: "../img/magic2.jpg",
+        categoria:"magic",
+    },{
+        id: "slifer",
+        nombre: "Slifer The Sky Dragon",
+        descripcion: "Carta de la Primera Edicion",
+        stock: 2,
+        precio: 180,
+        imagen: "../img/yugioh2.png",
         categoria:"yugioh",
+    },{
+        id: "oinkologne",
+        nombre: "Oinkologne EX",
+        descripcion: "Carta de la Primera Edicion",
+        stock: 2,
+        precio: 180,
+        imagen: "../img/pokemon2.png",
+        categoria:"pokemon",
+    },{
+        id: "blueyesdragon",
+        nombre: "Blue-Eyes White Dragon",
+        descripcion: "Carta de la Primera Edicion",
+        stock: 2,
+        precio: 180,
+        imagen: "../img/yugioh3.png",
+        categoria:"yugioh",
+    },{
+        id: "karn",
+        nombre: "Karn Liberado",
+        descripcion: "Carta de la Primera Edicion",
+        stock: 2,
+        precio: 180,
+        imagen: "../img/magic3.jpg",
+        categoria:"magic",
+    },{
+        id: "arcanine",
+        nombre: "Arcanine EX",
+        descripcion: "Carta de la Primera Edicion",
+        stock: 2,
+        precio: 180,
+        imagen: "../img/pokemon3.png",
+        categoria:"pokemon",
     }
+        
     
 ]
 

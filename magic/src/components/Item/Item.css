@@ -1,0 +1,30 @@
+.card-container{
+    text-align: center;
+}
+
+.nombre {
+    color: #00ADB5;
+}
+
+.card-container button {
+    text-decoration: none;
+    color: red;
+    width: 200px;
+    background-color: #00ADB5;
+    color: white;
+    border-radius: 6px;
+    border: 0px;
+    width: 25%;
+}
+
+.card-container a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+
+.card-container button:hover {
+    background-color: #393E46;
+}
+
+
