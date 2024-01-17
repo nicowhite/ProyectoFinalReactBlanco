@@ -1,0 +1,31 @@
+.controles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controles button {
+  text-decoration: none;
+  width: 100px;
+  background-color: #00adb5;
+  color: white;
+  border-radius: 6px;
+  border: 0px;
+  width: 15%;
+  height: 2rem;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.terminar {
+  align-items: center;
+  align-self: center;
+  background-color: #00adb5;
+  color: white;
+  border-radius: 6px;
+  border: 0px;
+  width: 200px;
+  height: 2rem;
+  margin: 1rem;
+}
