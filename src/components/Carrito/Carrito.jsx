@@ -4,7 +4,7 @@ import "./Carrito.css"
 
 
 const Carrito = () => {
-  const { carrito } = useContext(CartContext);
+  const { carrito, borrarCarrito, borrarProducto } = useContext(CartContext);
 
   return (
     <div>
@@ -14,9 +14,11 @@ const Carrito = () => {
             <p>{producto.nombre}</p>
             <img src={producto.imagen} alt={producto.nombre} />
             <p>Cantidad: {producto.cantidad}</p>
+            <button onClick={  () =>  borrarProducto(producto.id)}>Eliminar Producto</button>
           </li>
         ))}
       </ul>
+            <button onClick={borrarCarrito}>Eliminar Carrito</button>
     </div>
   );
 };
