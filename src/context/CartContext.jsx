@@ -10,28 +10,29 @@ const CartProvider = ({ children }) => {
 
 
   const añadirProducto = (producto) => {
-    const condicion = estaEnElCarrito(producto.id)
-    if(condicion){
-        //logica para sumar la cantidad si el producto ya estaba agregado
-        const productosModificados = carrito.map((productoCarrito) =>{
-            if(productoCarrito.id === producto.id) {
-                return {...productoCarrito, cantidad: productoCarrito.cantidad + producto.cantidad}
-            }else {
-                return productoCarrito
-            }
-        })
+    const condicion = estaEnElCarrito(producto.id);
+    if (condicion) {
+      //logica para sumar la cantidad si el producto ya estaba agregado
+      const productosModificados = carrito.map((productoCarrito) => {
+        if (productoCarrito.id === producto.id) {
+          return {
+            ...productoCarrito,
+            cantidad: productoCarrito.cantidad + producto.cantidad,
+          };
+        } else {
+          return productoCarrito;
+        }
+      });
 
-        setCarrito(productosModificados)
-    }else {
-        setCarrito([...carrito, producto]);
+      setCarrito(productosModificados);
+    } else {
+      setCarrito([...carrito, producto]);
     }
   };
 
-
-
   const estaEnElCarrito = (idProducto) => {
-    return carrito.some(()=> idProducto === idProducto )
-  }
+    return carrito.some((producto) => producto.id === idProducto);
+  };
 
 
 

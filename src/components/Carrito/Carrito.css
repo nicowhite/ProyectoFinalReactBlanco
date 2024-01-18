@@ -1,0 +1,14 @@
+.carrito-model {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    border: solid 2px;
+    border-color: white;
+}
+
+.carrito-model li {
+    padding: 2rem;
+}
