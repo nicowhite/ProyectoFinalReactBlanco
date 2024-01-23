@@ -12,6 +12,15 @@ const ItemDetailContainer = () => {
 
     useEffect(()=>{
 
+    //     const productoRef = doc(db, "productos", id);
+    //     getDoc(productoRef).then((respuest) => {
+    //         const productoDb = {id: respuesta.id, ...respuesta.data() };
+    //         setProducto(productoDb);
+    //     });
+    // }, [id]);
+
+
+
         obtenerProductos
         .then((respuesta)=> {
         const productoEncontrado = respuesta.find((prod)=> prod.id ===id)

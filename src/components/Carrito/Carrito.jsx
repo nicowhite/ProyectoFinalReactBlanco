@@ -5,6 +5,8 @@ import "./Carrito.css"
 
 const Carrito = () => {
   const { carrito, borrarCarrito, borrarProducto } = useContext(CartContext);
+  console.log(23)
+
 
   return (
     <div>
