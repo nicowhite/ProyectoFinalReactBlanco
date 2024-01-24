@@ -1,37 +1,35 @@
 import React from "react";
 import { useState } from "react";
-import "./Checkout.css"
-
-
+import "./Checkout.css";
+import Form from "./Form";
 
 const Checkout = () => {
-const [datosForm, setDatosForm] = useState({
-  nombre: "",
-  telefono: "",
-  email: "",
-});
+  const [datosForm, setDatosForm] = useState({
+    nombre: "",
+    telefono: "",
+    email: "",
+  });
 
 
-   const guardarDatosInput = () =>{
-    console.log(event.target.value)
-   }
 
-  return(
-  <div>
-    <form >
-      <label htmlFor="nombre">Nombre </label>
-      <input type="text" id="nombre" name="nombre" value={datosForm.nombre} onChange={guardarDatosInput}/>
-
-      <label htmlFor="telefono">Telefono </label>
-      <input type="text" id="telefono" name="telefono" value={datosForm.telefono} onChange={guardarDatosInput}/>
-
-      <label htmlFor="email">Email </label>
-      <input type="email" id="email" name="email" value={datosForm.email} onChange={guardarDatosInput}/>
+  const guardarDatosInput = (event) => {
+    setDatosForm({ ...datosForm, [event.target.name]: event.target.value });
+  };
 
 
-        <button type="submit">Enviar Orden</button>
-    </form>
-  </div>);
-}
+  const enviarOrden = (event) =>{
+    event.preventDefault()
+    console.log(datosForm)
+  }
+
+
+
+
+  return (
+    <div>
+     <Form datosForm={datosForm} guardarDatosInput={guardarDatosInput} enviarOrden={enviarOrden}/>
+    </div>
+  );
+};
 
 export default Checkout;
