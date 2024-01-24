@@ -1,12 +1,12 @@
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
-import "./Carrito.css"
-
+import "./Carrito.css";
+import { Link } from "react-router-dom";
 
 const Carrito = () => {
-  const { carrito, borrarCarrito, borrarProducto } = useContext(CartContext);
-  console.log(23)
-
+  const { carrito, borrarCarrito, borrarProducto, totalPrecio } =
+    useContext(CartContext);
+  console.log(23);
 
   return (
     <div>
@@ -16,11 +16,20 @@ const Carrito = () => {
             <p>{producto.nombre}</p>
             <img src={producto.imagen} alt={producto.nombre} />
             <p>Cantidad: {producto.cantidad}</p>
-            <button onClick={  () =>  borrarProducto(producto.id)}>Eliminar Producto</button>
+            <div className="text">precio c/u: ${producto.precio}</div>
+            <button onClick={() => borrarProducto(producto.id)}>
+              Eliminar Producto
+            </button>
           </li>
         ))}
       </ul>
-            <button onClick={borrarCarrito}>Eliminar Carrito</button>
+      <h4 className="total-pago">Total a pagar: ${totalPrecio()}</h4>
+      <div className="borrar-todo">
+        <button onClick={borrarCarrito}>Eliminar Carrito</button>
+      </div>
+      <Link className="comprar-boton" to="/checkout">
+        <button>Comprar</button>
+      </Link>
     </div>
   );
 };
