@@ -6,12 +6,16 @@ import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import db from "../../db/db";
 import { addDoc, collection } from "firebase/firestore";
+import Swal from 'sweetalert2'
+
+
 
 const Checkout = () => {
   const [datosForm, setDatosForm] = useState({
     nombre: "",
     telefono: "",
     email: "",
+    emailRepetido:""
   });
 
   const [idOrden, setIdOrden] = useState(null);
@@ -23,12 +27,21 @@ const Checkout = () => {
 
   const enviarOrden = (event) => {
     event.preventDefault();
+    if(datosForm.email === datosForm.emailRepetido){
     const orden = {
       comprador: { ...datosForm },
       productos: [...carrito],
+      fecha: new Date(),
       total: totalPrecio(),
     };
     subirOrden(orden);
+  }else {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Los mails no coinciden!",
+    });
+  }
   };
 
   const subirOrden = (orden) => {

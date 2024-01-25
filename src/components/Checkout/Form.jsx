@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Form = ({datosForm, guardarDatosInput, enviarOrden}) => {
   return (
     <form onSubmit={enviarOrden}>
@@ -10,6 +11,7 @@ const Form = ({datosForm, guardarDatosInput, enviarOrden}) => {
       name="nombre"
       value={datosForm.nombre}
       onChange={guardarDatosInput}
+      required
     />
 
     <label htmlFor="telefono">Telefono </label>
@@ -19,6 +21,7 @@ const Form = ({datosForm, guardarDatosInput, enviarOrden}) => {
       name="telefono"
       value={datosForm.telefono}
       onChange={guardarDatosInput}
+      required
     />
 
     <label htmlFor="email">Email </label>
@@ -28,6 +31,17 @@ const Form = ({datosForm, guardarDatosInput, enviarOrden}) => {
       name="email"
       value={datosForm.email}
       onChange={guardarDatosInput}
+      required
+    />
+
+<label htmlFor="emailRepetido">Repetir Email </label>
+    <input
+      type="email"
+      id="emailRepetido"
+      name="emailRepetido"
+      value={datosForm.emailRepetido}
+      onChange={guardarDatosInput}
+      required
     />
 
     <button type="submit">Enviar Orden</button>

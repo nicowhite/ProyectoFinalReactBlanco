@@ -1,8 +1,24 @@
-# React + Vite
+# Tienda de Cartas Intercambiables - Proyecto Final de Coder House - Nicolas Blanco
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Resumen
 
-Currently, two official plugins are available:
+¡Bienvenido a la Tienda de Cartas Intercambiables, tu destino para las mejores cartas de Yu-Gi-Oh!, Magic: The Gathering y Pokemon! Este proyecto de comercio electrónico basado en React es la culminación del programa de Coder House, diseñado para ofrecer a los entusiastas una experiencia fluida y agradable para comprar y explorar una amplia colección de cartas intercambiables.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Teconologias Utilizadas
+
+- **React**
+- **Firebase**
+- **React Router DOM**
+- **SweetAlert:**
+- **React-Spinner:**
+
+
+## Como Instalar
+
+1. Clona el repositorio.
+2. Instala las dependencias usando `npm install`.
+3. Ejecuta el servidor de desarrollo con `npm run dev`.
+
+## Contacto
+
+[Nicolas Blanco](https://github.com/nicowhite)
