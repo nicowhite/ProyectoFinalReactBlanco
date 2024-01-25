@@ -67,3 +67,14 @@
 .comprar-boton button:hover::before {
     transform: translateX(0);
    }
+
+   .carrito-vacio{
+    text-align: center;
+    margin-top: 5rem;
+   }
+
+   .boton-carrito-vacio{
+    margin-top: 1rem;
+    box-decoration-break: none;
+    color: red;
+   }

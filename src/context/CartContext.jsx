@@ -63,7 +63,7 @@ const CartProvider = ({ children }) => {
 
 
 
-  console.log(carrito);
+  
   return (
     
     <CartContext.Provider value={{ carrito, añadirProducto, totalCantidad, borrarCarrito, borrarProducto, totalPrecio }}>
