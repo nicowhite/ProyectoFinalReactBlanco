@@ -1,4 +1,4 @@
-# Tienda de Cartas Intercambiables - Proyecto Final de Coder House - Nicolas Blanco
+<span style="color:blue"># Tienda de Cartas Intercambiables - Proyecto Final de Coder House - Nicolas Blanco</span>
 
 ## Resumen
 
