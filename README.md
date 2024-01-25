@@ -1,5 +1,4 @@
-# <span style="color:blue">Tienda de Cartas Intercambiables - Proyecto Final de Coder House - Nicolas Blanco</span>
-
+# 🃏 Tienda de Cartas Intercambiables - Proyecto Final de Coder House - Nicolas Blanco
 ## Resumen
 
 ¡Bienvenido a la Tienda de Cartas Intercambiables, tu destino para las mejores cartas de Yu-Gi-Oh!, Magic: The Gathering y Pokemon! Este proyecto de comercio electrónico basado en React es la culminación del programa de Coder House, diseñado para ofrecer a los entusiastas una experiencia fluida y agradable para comprar y explorar una amplia colección de cartas intercambiables.
