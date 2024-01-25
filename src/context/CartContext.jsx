@@ -1,6 +1,8 @@
 import { createContext } from "react";
 import { useState } from "react";
 
+
+
 // Creamos un contexto de React llamado CartContext
 const CartContext = createContext();
 

@@ -8,6 +8,17 @@ const Carrito = () => {
     useContext(CartContext);
   console.log(23);
 
+  if (carrito.length === 0) {
+    return (
+      <div className="carrito-vacio">
+        <h2>UPS!!! El Carrito Esta Vacio 😅😅😅 </h2>
+        <button className="boton-carrito-vacio">
+          <Link to="/">Volver al home</Link>
+        </button>
+      </div>
+    );
+  }
+
   return (
     <div>
       <ul className="carrito-model">
