@@ -8,8 +8,8 @@
 - **React**
 - **Firebase**
 - **React Router DOM**
-- **SweetAlert:**
-- **React-Spinner:**
+- **SweetAlert**
+- **React-Spinner**
 
 
 ## Como Instalar
