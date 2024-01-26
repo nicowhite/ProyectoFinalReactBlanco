@@ -1,33 +1,33 @@
-.orden-generada{
-    text-align: center;
-    margin-top: 10rem;
+.orden-generada {
+  text-align: center;
+  margin-top: 10rem;
 }
 
-.mas-container{
-    margin-top: 2rem;
+.mas-container {
+  margin-top: 2rem;
 }
 
 .mas-container a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .mas-container button {
-    border: none;
-    outline: none;
-    background-color: #00adb5;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: 700;
-    color: #fff;
-    border-radius: 5px;
-    transition: all ease 0.1s;
-    box-shadow: 0px 5px 0px 0px #036368;
-    margin-top: 1rem;
-    text-decoration: none;
+  border: none;
+  outline: none;
+  background-color: #00adb5;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px #036368;
+  margin-top: 1rem;
+  text-decoration: none;
 }
 .mas-container button:active {
-margin-top: 1rem;
-transform: translateY(10px);
-box-shadow: 0px 0px 0px 0px #00adb5;}
-
+  margin-top: 1rem;
+  transform: translateY(10px);
+  box-shadow: 0px 0px 0px 0px #00adb5;
+}

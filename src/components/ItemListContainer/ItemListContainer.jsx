@@ -4,9 +4,8 @@ import { useParams } from "react-router-dom";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import db from "../../db/db";
 import { MoonLoader } from "react-spinners";
-import "./ItemListContainer.css"
+import "./ItemListContainer.css";
 
-// import "./ItemListContainer.css";
 
 const ItemListContainer = ({ saludo }) => {
   const [productos, setProductos] = useState([]);
@@ -41,20 +40,17 @@ const ItemListContainer = ({ saludo }) => {
 
   return (
     <>
-    {cargando ? (
-      <div className="cargando">
-        <MoonLoader
-  color="#00adb5"
-  size={50}
-/>
-      </div>
-    ) : (
-      <div className="item-list-container">
-        <p className="saludo">{saludo}</p>
-        <ItemList productos={productos} />
-      </div>
-    )}
-  </>
+      {cargando ? (
+        <div className="cargando">
+          <MoonLoader color="#00adb5" size={50} />
+        </div>
+      ) : (
+        <div className="item-list-container">
+          <p className="saludo">{saludo}</p>
+          <ItemList productos={productos} />
+        </div>
+      )}
+    </>
   );
 };
 

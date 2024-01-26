@@ -1,4 +1,4 @@
-.container-navbar{
+.container-navbar {
   margin-top: 2rem;
 }
 
@@ -12,7 +12,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .navbar li {
@@ -26,9 +25,8 @@
 }
 
 .navbar li a:hover {
-  color: #00ADB5;
+  color: #00adb5;
 }
-
 
 #cartwidget {
   display: flex;
@@ -42,4 +40,3 @@
   height: 4rem;
   margin-left: 2rem;
 }
-

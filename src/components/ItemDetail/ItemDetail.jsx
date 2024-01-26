@@ -9,8 +9,6 @@ const ItemDetail = ({ producto }) => {
   const [toggle, setToggle] = useState(false);
   const { añadirProducto, texto, saludar } = useContext(CartContext);
 
- 
-
   const agregarAlCarrito = (contador) => {
     const productoNuevo = { ...producto, cantidad: contador };
     añadirProducto(productoNuevo);
@@ -26,24 +24,22 @@ const ItemDetail = ({ producto }) => {
         <p className="precio">$ {producto.precio}</p>
         <p className="stock">Stock: {producto.stock}</p>
 
-
-
-    <div className="button-container">
-        {toggle ? (
-          <>
-            <Link className="button-terminar" to="/carrito">
-              Terminar compra
-            </Link>
-            <Link className="button-terminar" to="/">
-              Seguir comprando
-            </Link>
-          </>
-        ) : (
-          <ItemCount
-            stock={producto.stock}
-            agregarAlCarrito={agregarAlCarrito}
-          />
-        )}
+        <div className="button-container">
+          {toggle ? (
+            <>
+              <Link className="button-terminar" to="/carrito">
+                Terminar compra
+              </Link>
+              <Link className="button-terminar" to="/">
+                Seguir comprando
+              </Link>
+            </>
+          ) : (
+            <ItemCount
+              stock={producto.stock}
+              agregarAlCarrito={agregarAlCarrito}
+            />
+          )}
         </div>
       </div>
     </div>
