@@ -1,9 +1,10 @@
 import React from 'react'
+import "./Form.css"
 
 
 const Form = ({datosForm, guardarDatosInput, enviarOrden}) => {
   return (
-    <form onSubmit={enviarOrden}>
+    <form onSubmit={enviarOrden} className='formulario'>
     <label htmlFor="nombre">Nombre </label>
     <input
       type="text"

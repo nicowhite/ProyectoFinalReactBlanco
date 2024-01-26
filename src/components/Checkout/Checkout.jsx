@@ -7,6 +7,7 @@ import { CartContext } from "../../context/CartContext";
 import db from "../../db/db";
 import { addDoc, collection } from "firebase/firestore";
 import Swal from 'sweetalert2'
+import { Link } from "react-router-dom";
 
 
 
@@ -59,6 +60,11 @@ const Checkout = () => {
         <div className="orden-generada">
           <h2>Orden Generada Correctamente!</h2>
           <p>N° de orden: {idOrden} </p>
+          <div className="mas-container">
+            <button>
+          <Link to="/">
+              Ver mas Productos
+            </Link></button></div>
         </div>
       ) : (
         <Form

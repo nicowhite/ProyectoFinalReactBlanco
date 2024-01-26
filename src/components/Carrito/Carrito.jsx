@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 const Carrito = () => {
   const { carrito, borrarCarrito, borrarProducto, totalPrecio } =
     useContext(CartContext);
- 
 
   if (carrito.length === 0) {
     return (

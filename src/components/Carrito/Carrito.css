@@ -13,6 +13,22 @@
   padding: 2rem;
 }
 
+.carrito-model button {
+  text-decoration: none;
+  background-color: #FF6868;
+  color: #fff;
+  border-radius: 6px;
+  border: 0px;
+  margin: 1rem;
+  padding: 0.2rem;
+  width: 10rem;
+}
+
+.carrito-model button:hover{
+  background-color: #6D2932;
+}
+
+
 .total-pago {
   text-align: center;
 }
@@ -22,6 +38,22 @@
   justify-content: center;
   padding: 20px;
 }
+
+.borrar-todo button{
+  text-decoration: none;
+  background-color: #FF6868;
+  color: #fff;
+  border-radius: 6px;
+  border: 0px;
+  margin: 1rem;
+  padding: 0.2rem;
+  width: 10rem;
+}
+
+.borrar-todo button:hover{
+  background-color: #6D2932;
+}
+
 
 .comprar-boton {
   display: flex;
@@ -77,4 +109,23 @@
     margin-top: 1rem;
     box-decoration-break: none;
     color: red;
+   }
+
+   .boton-carrito-vacio {
+    color: pink;
+    background-color: #00adb5;
+    color: #fff;
+    border-radius: 6px;
+    border: 0px;
+    margin: 1rem;
+    padding: 0.2rem;
+    width: 10rem;
+   }
+
+  
+
+   .boton-carrito-vacio a {
+    text-decoration: none;
+    color: #fff;
+
    }
