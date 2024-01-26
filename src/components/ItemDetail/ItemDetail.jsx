@@ -7,7 +7,7 @@ import { CartContext } from "../../context/CartContext";
 
 const ItemDetail = ({ producto }) => {
   const [toggle, setToggle] = useState(false);
-  const { añadirProducto, texto, saludar } = useContext(CartContext);
+  const { añadirProducto } = useContext(CartContext);
 
   const agregarAlCarrito = (contador) => {
     const productoNuevo = { ...producto, cantidad: contador };

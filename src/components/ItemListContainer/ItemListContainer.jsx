@@ -6,7 +6,6 @@ import db from "../../db/db";
 import { MoonLoader } from "react-spinners";
 import "./ItemListContainer.css";
 
-
 const ItemListContainer = ({ saludo }) => {
   const [productos, setProductos] = useState([]);
   const [cargando, setCargando] = useState(true);
@@ -20,10 +19,8 @@ const ItemListContainer = ({ saludo }) => {
     const productosRef = collection(db, "productos");
 
     if (categoria) {
-      //filtrar data
       consulta = query(productosRef, where("categoria", "==", categoria));
     } else {
-      //traer toda la data
       consulta = productosRef;
     }
 
