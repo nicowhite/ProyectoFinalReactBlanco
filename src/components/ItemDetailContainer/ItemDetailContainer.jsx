@@ -4,6 +4,7 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 import { doc, getDoc } from "firebase/firestore";
 import db from "../../db/db";
 
+
 const ItemDetailContainer = () => {
   const [producto, setProducto] = useState({});
   const [productoExiste, setProductoExiste] = useState(false);
@@ -25,7 +26,7 @@ const ItemDetailContainer = () => {
   return (
     <div>
       {productoExiste ? (
-        <div>Producto no existe</div>
+        <div className="no-existe">Producto no existe</div>
       ) : (
         <ItemDetail producto={producto} />
       )}
